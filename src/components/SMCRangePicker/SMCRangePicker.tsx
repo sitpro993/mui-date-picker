@@ -20,14 +20,12 @@ const SMCRangePicker = React.forwardRef<PickerRef, SMCRangePickerProps>(
   (props, ref) => {
     const { locale, prefixCls, ...restProps } = props;
     return (
-      <div>
-        <RangePicker
-          locale={locale || en}
-          prefixCls={prefixCls || 'smc'}
-          {...restProps}
-          ref={ref}
-        />
-      </div>
+      <RangePicker
+        locale={locale || en}
+        prefixCls={prefixCls || 'smc'}
+        {...restProps}
+        ref={ref}
+      />
     );
   }
 );
