@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import SMCRangPicker from '../SMCRangePicker';
+import SMRangePicker from '../SMRangePicker';
 
 const Example: FC<any> = () => {
   return (
@@ -11,7 +11,7 @@ const Example: FC<any> = () => {
         height: '100%'
       }}
     >
-      <SMCRangPicker />
+      <SMRangePicker />
     </div>
   );
 };

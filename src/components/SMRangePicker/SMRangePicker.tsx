@@ -1,11 +1,11 @@
 import React from 'react';
-import { SMCDatePicker } from '../SMCDatePicker';
+import { SMDatePicker } from '../SMDatePicker';
 import { Moment } from 'moment';
 import { PickerRef, RangePickerProps } from 'rc-picker';
 import en from '../../locale/en_US';
 import { PickerLocale } from 'antd/lib/date-picker/generatePicker';
 
-export interface SMCRangePickerProps
+export interface SMRangePickerProps
   extends Omit<
     RangePickerProps<Moment>,
     'placement' | 'locale' | 'generateConfig'
@@ -14,21 +14,19 @@ export interface SMCRangePickerProps
   placement?: 'bottomLeft' | 'bottomRight' | 'topLeft' | 'topRight';
 }
 
-const { RangePicker } = SMCDatePicker;
-
-const SMCRangePicker = React.forwardRef<PickerRef, SMCRangePickerProps>(
+const SMRangePicker = React.forwardRef<PickerRef, SMRangePickerProps>(
   (props, ref) => {
     const { locale, prefixCls, ...restProps } = props;
     return (
-      <RangePicker
+      <SMDatePicker.RangePicker
         locale={locale || en}
-        prefixCls={prefixCls || 'smc'}
+        prefixCls={prefixCls || 'sm'}
         {...restProps}
         ref={ref}
       />
     );
   }
 );
-SMCRangePicker.displayName = 'RangePicker';
+SMRangePicker.displayName = 'RangePicker';
 
-export default SMCRangePicker;
+export default SMRangePicker;

@@ -2,6 +2,6 @@ import { DatePicker } from 'antd';
 import type { Moment } from 'moment';
 import momentGenerateConfig from 'rc-picker/lib/generate/moment';
 
-const SMCDatePicker = DatePicker.generatePicker<Moment>(momentGenerateConfig);
+const SMDatePicker = DatePicker.generatePicker<Moment>(momentGenerateConfig);
 
-export default SMCDatePicker;
+export default SMDatePicker;

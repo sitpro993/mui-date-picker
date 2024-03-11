@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import SMCDatePicker from '../SMCDatePicker';
+import SMDatePicker from '../SMDatePicker';
 
 const Example: FC<any> = () => {
   return (
@@ -11,7 +11,7 @@ const Example: FC<any> = () => {
         height: '100%'
       }}
     >
-      <SMCDatePicker />
+      <SMDatePicker />
     </div>
   );
 };
