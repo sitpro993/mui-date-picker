@@ -1,2 +1,2 @@
-export * from './SMCDatePicker';
-export * from './SMCRangePicker';
+export * from './SMDatePicker';
+export * from './SMRangePicker';
